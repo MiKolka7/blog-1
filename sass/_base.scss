@@ -1,0 +1,28 @@
+body{
+	color:#676767;
+}
+
+h1{
+	
+	font-size:35px;
+	font-family: $base-font;
+	font-weight: 400;
+	font-style: italic;
+	color:#fff;
+}
+
+h2{
+	font-size: 30px;
+	color:#fff;
+
+	
+	&.primary{
+		font-style:italic;
+		color:$primary-color;
+		font-weight: bold;
+	}
+
+	&.secondary{
+		color:$secondary-color;
+	}
+}
