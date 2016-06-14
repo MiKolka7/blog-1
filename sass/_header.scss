@@ -4,12 +4,6 @@ header{
 	.container{
 		position: relative;
 	}
-	
-	.container::after{
-		content:'';
-		clear: both;
-		display: table;
-	}
 
 	.nav{
 		position: absolute;
@@ -17,15 +11,9 @@ header{
 		top: 0;
 		bottom: 0;
 
-		&::after{
-			content: "";
+		.menu{
 			display: inline-block;
-			height: 100%;
-			vertical-align: middle;
-		}
-
-		nav{
-			display: inline-block;
+			height:100%;
 		}
 
 		.menu-item{
@@ -33,14 +21,65 @@ header{
 			font-family:$base-font;
 			font-weight: bold;
 			color:#fff;
-			padding:0 20px;
+			margin:0 20px;
+			height: 100%;
+			display: inline-block;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+				
+				&::after{
+					content:"";
+					display: inline-block;
+					height: 100%;
+					vertical-align: middle;
+				}
+
+				&:hover,
+				&.active{
+					color:$primary-color;
+				}
+
+				&.active{
+					border-top:2px solid $primary-color;
+				}
 		}
+
 
 		.search{
 			width: 50px;
-			height: 50px;
-			background-color:$primary-color;
-			display: inline-block;
+			float: right;
+			height: 100%;
+			
+			div{
+				background-color: $primary-color;
+				display: inline-block;
+				width:100%;
+				text-align: center;
+				
+				&::after{
+					content: '';
+					display: inline-block;
+					height: 100%;
+					vertical-align: middle;
+					padding-bottom: 100%;
+				}
+
+				&:hover{
+					background-color: transparent;
+					color:$primary-color;
+					cursor: pointer;
+				}
+			}
+
+			&::after{
+				content: '';
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+			}
+
+
 		}
 	}
 }
