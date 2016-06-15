@@ -59,7 +59,6 @@
 		font-weight: 400;
 		line-height: 30px;
 		vertical-align: middle;
-		margin-bottom: 24px;
  	}
  	.movie-list-item-price-old {
  		color: #ccc;
@@ -72,6 +71,7 @@
  	.price-3d {
  		line-height: 30px;
  		height: 30px;
+ 		margin-bottom: 24px;
  		.movie-list-button {
  			float: right;
  			.btn-m {
