@@ -14,11 +14,15 @@ $height: 44px;
   box-sizing: border-box;
   background-color: rgb(245, 168, 32);
   border: 3px solid rgb(245, 168, 32);
+  transition: all 0.8s ease-out;
   
   &:hover{
     color: #FFF;
     background: transparent;
     border-color: #fff;
+   -webkit-animation: sonarEffect 1.5s ease-out 75ms;
+  -moz-animation: sonarEffect 1.5s ease-out 75ms;
+  animation: sonarEffect 1.5s ease-out 75ms;
   }
   
   &-invise {
@@ -60,5 +64,47 @@ $height: 44px;
 
   &-green {
   	background: green;
+  }
+}
+@-webkit-keyframes sonarEffect {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255,255,255,0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255,255,255,0.5);
+    -webkit-transform: scale(1.1);
+    opacity: 0;
+  }
+}
+@-moz-keyframes sonarEffect {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255,255,255,0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255,255,255,0.5);
+    -moz-transform: scale(1.1);
+    opacity: 0;
+  }
+}
+@keyframes sonarEffect {
+  0% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255,255,255,0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255,255,255,0.5);
+    transform: scale(1.1);
+    opacity: 0;
   }
 }
