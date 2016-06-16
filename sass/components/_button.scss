@@ -15,6 +15,12 @@ $height: 44px;
   background-color: rgb(245, 168, 32);
   border: 3px solid rgb(245, 168, 32);
   
+  &:hover{
+    color: #FFF;
+    background: transparent;
+    border-color: #fff;
+  }
+  
   &-invise {
   	color: #FFF;
   	background: transparent;

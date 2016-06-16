@@ -1,0 +1,32 @@
+/* Preview */
+.container_pr{
+	background-image: url("../img/people.jpg");
+	min-height: 600px;
+	
+	.block_pr{
+		max-width: 600px;
+		margin: 0 auto;
+		text-align: center;
+		transform: translate(0, 150px);
+		line-height: 2;
+	}
+	.title_pr{
+		color: white;
+		font-family: 'Lato';
+		font-size: 2.188em;
+		font-style: italic;
+	}	
+	.text_pr{
+		color: white;
+		font-family: 'Lato';
+		font-size: 0.938em;
+		font-weight: 400;
+		line-height: 30px;
+	}
+	.buttons_pr{
+		padding-top: 40px;
+	}
+	.btn{
+		margin: 0 1%;
+	}
+}
