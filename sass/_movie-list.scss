@@ -2,7 +2,6 @@
 .movie-list {
 		padding: 100px 0;
 		text-align: center;
-
 	.movie-list-title {
 		color: #ffa820;
 		font-family: Lato;
@@ -19,18 +18,20 @@
 		font-weight: 400;
 		line-height: 24px;
 	}
-	
 	.movie-list-item {
 		font-size: 0px;
 		margin: 75px 0 20px;
-	
+		overflow-y: hidden;
+		height: 479px;
+	}
 	.col-4 {
 		display: inline-block;
 		margin-right: 30px;
+		margin-bottom: 30px;
 		width: 270px;
 		height: auto;
 		vertical-align: top;
-		text-align: left;
+		text-align: center;
 	}
 	.col-4:nth-child(4n) {
  		margin-right: 0;
@@ -59,6 +60,7 @@
 		font-weight: 400;
 		line-height: 30px;
 		vertical-align: middle;
+		text-align: left;
  	}
  	.movie-list-item-price-old {
  		color: #ccc;
@@ -67,6 +69,7 @@
 		font-weight: 400;
 		line-height: 24px;
 		vertical-align: middle;
+		text-decoration: line-through;
  	}
  	.price-3d {
  		line-height: 30px;
@@ -85,18 +88,7 @@
  			.btn-m:nth-last-child(1) {
  				margin-right: 0;
  			}
- 			.add-to-cart-k {
- 				color: #25254e;
-				font-size: 15px;
-				font-weight: 400;
-				line-height: 24px;
-				font-family: FontAwesome;
-				.add-to-cart {
-					font-family: Lato;
-				}
- 			}
  		}
-	 	
  	}
  	.starability-basic {
 	    display: block;
@@ -131,4 +123,21 @@
 	}
 	
 }
-}
+.add-to-cart {
+			color: #25254e;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 44px;
+			font-family: Lato;
+			display: inline-block;
+			
+		}
+.add-to-cart-k {
+			font-family: FontAwesome;
+			color: #25254e;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 24px;
+			display: inline-block;
+			margin-right: 15px;
+ 		}
