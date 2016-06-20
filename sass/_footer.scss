@@ -1,1 +1,30 @@
+.footer{
+	height:200px;
+	background-color: #353564;
+	font-size: 15px;
+	font-family: Lato;
+	color:#cccccc;
+	
 
+	
+	.container{
+		height:100%;
+	}
+	
+	span{
+		position:relative;
+		top:50%;
+		transform: translate(0, -50%);
+
+	}
+
+	.social{
+		float:right;
+
+	}
+
+	.social-item{
+		float:left;
+		background-color:$primary-color;
+	}
+}
