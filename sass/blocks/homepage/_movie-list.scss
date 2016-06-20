@@ -1,24 +1,15 @@
-
-.movie-list {
+.movies-section {
 		padding: 100px 0;
 		text-align: center;
-	.movie-list-title {
-		color: #ffa820;
-		font-family: Lato;
-		font-size: 30px;
-		font-weight: 700;
-		font-style: italic;
-		line-height: 24px;
-		margin-bottom: 15px;
-	}
-	.movie-list-title-text {
+		
+	.movies-section-title-text {
 		color: #676767;
 		font-family: Lato;
 		font-size: 13px;
 		font-weight: 400;
 		line-height: 24px;
 	}
-	.movie-list-item {
+	.movie-list {
 		font-size: 0px;
 		margin: 75px 0 20px;
 		overflow-y: hidden;
