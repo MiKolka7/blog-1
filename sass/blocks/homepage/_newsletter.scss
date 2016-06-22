@@ -1,0 +1,22 @@
+.newsletter{
+	background-color:$secondary-color;
+	height:200px;
+	
+	.subscribe{
+		float:left;
+		position:relative;
+		top:50%;
+		transform:translate(0,-50%);
+	}
+
+	.email{
+		float:right;
+		
+		.address{
+			border:#fff solid 1px;
+			width: calc(100% - 50px)
+		}
+	}
+
+
+}
