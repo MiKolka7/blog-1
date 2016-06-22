@@ -23,18 +23,48 @@
 		float:right;
 		position:relative;
 		top:50%;
-		transform: translate(0, -50%)
-
+		transform: translate(0, -50%);
 	}
 
 	.social-item{
 		float:left;
 		background-color:$primary-color;
-		
 		width:50px;
 		margin-left:10px;
 		text-align: center;
+		position:relative;
+		line-height:1;
+		transition:background-color .3s;
 		
+		&:hover{
+			background-color: transparent;
+			cursor:pointer;
+			
+			i{
+				color:$primary-color;
+				transition:color .3s;
+			}
+		}
+		
+		div{
+			position:absolute;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+		}
+
+		i {
+			-webkit-transform: translateY(-50%);
+			   -moz-transform: translateY(-50%);
+			    -ms-transform: translateY(-50%);
+			     -o-transform: translateY(-50%);
+			        transform: translateY(-50%);
+		    
+		    position:relative;
+		    top: 50%;
+		    color:#25254e;
+		}
 	}
 
 	.social-item::after{
