@@ -1,0 +1,53 @@
+.newsletter{
+	background-color:$secondary-color;
+	height:200px;
+
+
+	
+	.container{
+		
+	}
+	
+	.subscribe{
+		float:left;
+		position:relative;
+		top:50%;
+		transform:translate(0,-50%);
+		width:40%;
+	}
+
+	.email{
+		float:right;
+		position:relative;
+		top:50%;
+		transform:translate(0,-50%);
+		width:60%;
+	}
+		
+		.address{
+			border:#fff solid 1px;
+			width: calc(100% - 70px);
+			height:60px;
+			color:#fff;
+			font-size: 13px;
+			font-family: Lato;
+			padding-left:50px;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+		}
+
+		.submit{
+			width:70px;
+			height:60px;
+			background-color: $primary-color;
+			float:right;
+			
+			i{
+				color:$secondary-color;
+
+			}
+		}
+
+
+}
