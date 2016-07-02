@@ -52,29 +52,20 @@
 			bottom:0;
 			left:0;
 			right:0;
-			
-vertical-align:middle;
+			vertical-align:middle;
 
 
-&::after{
-			content: '';
-			height: 100%;
-			display: inline-block;
-			vertical-align: middle;
-		}
+			&::after{
+						content: '';
+						height: 100%;
+						display: inline-block;
+						vertical-align: middle;
+					}
 		}
 
 		
 
 		i {
-			/*-webkit-transform: translateY(-50%);
-			   -moz-transform: translateY(-50%);
-			    -ms-transform: translateY(-50%);
-			     -o-transform: translateY(-50%);
-			        transform: translateY(-50%);
-		    
-		    position:relative;
-		    top: 50%;*/
 		    color:#25254e;
 		}
 	}

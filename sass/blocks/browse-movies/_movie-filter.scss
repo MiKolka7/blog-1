@@ -15,13 +15,6 @@ html, body, ul, li, a {
 	background-color: #25254e;
 }
 
-.clearfix::after{
-	content: '';
-	overflow: hidden;
-	display: table;
-	clear: both;
-} 
-
 .menu_filter {
 	margin: 0 auto;
 	max-width: 1170px;
